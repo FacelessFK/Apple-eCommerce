@@ -1,3 +1,10 @@
+// common js
+document.querySelectorAll(".watch-control , .controls a").forEach((control) => {
+    control.addEventListener("click", (e) => {
+        e.preventDefault();
+    });
+});
+// end of common js
 // cube
 const cube = document.querySelector(".cube");
 let y = 20;
@@ -91,3 +98,56 @@ window.addEventListener("scroll", () => {
     }
 });
 // end of section 3
+// section 4
+const watchBands = document.querySelector(".watch-bands");
+const watchCases = document.querySelector(".watch-cases");
+
+const watchTopControl = document.querySelector(".watch-top-control");
+const watchRightControl = document.querySelector(".watch-right-control");
+const watchBottomControl = document.querySelector(".watch-bottom-control");
+const watchLeftControl = document.querySelector(".watch-left-control");
+
+let axisY = 0;
+let axisX = 0;
+watchTopControl.addEventListener("click", () => {
+    watchCases.style.marginTop = `${(axisY -= 70)}rem`;
+    console.log(axisY);
+    hideControl();
+});
+watchBottomControl.addEventListener("click", () => {
+    watchCases.style.marginTop = `${(axisY += 70)}rem`;
+    console.log(axisY);
+    hideControl();
+});
+watchRightControl.addEventListener("click", () => {
+    watchBands.style.marginLeft = `${(axisX -= 70)}rem`;
+    console.log(axisX);
+    hideControl();
+});
+watchLeftControl.addEventListener("click", () => {
+    watchBands.style.marginLeft = `${(axisX += 70)}rem`;
+    hideControl();
+});
+const hideControl = () => {
+    if (axisY === -350) {
+        watchTopControl.classList.add("hideControl");
+    } else {
+        watchTopControl.classList.remove("hideControl");
+    }
+    if (axisY === 280) {
+        watchBottomControl.classList.add("hideControl");
+    } else {
+        watchBottomControl.classList.remove("hideControl");
+    }
+    if (axisX === -350) {
+        watchRightControl.classList.add("hideControl");
+    } else {
+        watchRightControl.classList.remove("hideControl");
+    }
+    if (axisX === 280) {
+        watchLeftControl.classList.add("hideControl");
+    } else {
+        watchLeftControl.classList.remove("hideControl");
+    }
+};
+// end of section 4

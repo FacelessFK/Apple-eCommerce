@@ -522,4 +522,101 @@ html {
 }
 /* end of section 3 info  */
 /* end of section 3 content */
-/* end of section 3  */ ;
+/* end of section 3  */
+/* section 4 */
+.section-4 {
+    height: 140vh;
+    position: relative;
+    padding: 20vh 0;
+    flex-direction: column;
+}
+/* section 4 watches */
+.watches {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.watches > div {
+    position: absolute;
+}
+/* watch bands  */
+.watch-band-img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: contain;
+}
+.watch-bands {
+    transform: translateX(17.5rem);
+    /* margin-left: 35rem; */
+    transition: all 1s;
+}
+/* end of watch bands  */
+/* watch cases  */
+.watch-cases {
+    flex-direction: column;
+    /* margin-top: 35rem; */
+    transform: translateY(17.5rem);
+    transition: all 1s;
+}
+.watch-case-img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: contain;
+}
+/* end of watch cases  */
+/* end of section 4 watches */
+/* watch controls */
+.watch-control {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(221, 221, 221, 0.4);
+    border-radius: 5rem;
+}
+.hideControl {
+    opacity: 0;
+    visibility: hidden;
+}
+.watch-control i {
+    font-size: 3rem;
+    color: #a9a0a0;
+}
+.watch-top-control {
+    top: 22vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.watch-right-control {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+}
+.watch-bottom-control {
+    bottom: 21vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.watch-left-control {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+}
+/* end of watch controls */
+/* watch button */
+.watch-btn {
+    position: absolute;
+    bottom: 30vh;
+    right: 35%;
+    width: 13rem;
+    height: 5rem;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    border: 0.1rem dashed var(--white-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+/* end of watch button */
+/* end of section 4 */ ;
