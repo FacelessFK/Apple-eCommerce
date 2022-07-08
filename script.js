@@ -1,9 +1,11 @@
 // common js
-document.querySelectorAll(".watch-control , .controls a , .iphone-btn").forEach((control) => {
-    control.addEventListener("click", (e) => {
-        e.preventDefault();
+document
+    .querySelectorAll(".watch-control , .controls a , .iphone-btn")
+    .forEach((control) => {
+        control.addEventListener("click", (e) => {
+            e.preventDefault();
+        });
     });
-});
 // end of common js
 // cube
 const cube = document.querySelector(".cube");
@@ -41,7 +43,8 @@ document
 
 const playPause = () => {
     if (bool) {
-        interval = setIntersection-5sform = `rotateY(${y++}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
+        interval = setInterval(() => {
+            cube.style.transform = `rotateY(${y++}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
         }, 100);
     } else {
         clearInterval(interval);
