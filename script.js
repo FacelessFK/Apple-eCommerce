@@ -1,5 +1,5 @@
 // common js
-document.querySelectorAll(".watch-control , .controls a").forEach((control) => {
+document.querySelectorAll(".watch-control , .controls a , .iphone-btn").forEach((control) => {
     control.addEventListener("click", (e) => {
         e.preventDefault();
     });
@@ -41,8 +41,7 @@ document
 
 const playPause = () => {
     if (bool) {
-        interval = setInterval(() => {
-            cube.style.transform = `rotateY(${y++}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
+        interval = setIntersection-5sform = `rotateY(${y++}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
         }, 100);
     } else {
         clearInterval(interval);
