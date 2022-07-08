@@ -619,4 +619,64 @@ html {
     cursor: pointer;
 }
 /* end of watch button */
-/* end of section 4 */ ;
+/* end of section 4 */
+/* --------------------- */
+/* section 5 */
+.section-5 {
+    width: 100%;
+    height: 100vh;
+}
+/* section 5 content */
+.airpods {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+/* section 5 heading */
+.section-5-heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15rem;
+    font-weight: 300;
+    color: var(--white-color);
+    text-shadow: 0.1rem.1rem 0 #999;
+}
+/* end of section 5 heading */
+/* section 5 images */
+.airpods img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.airposd-img-2 {
+    background-color: var(--primary-color);
+}
+/* end of section 5 images */
+/* section 5 buttons */
+.airpods-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5rem;
+}
+.airpods-btn {
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    margin: 0 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.airpods-btn:last-child {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+/* end of section 5 buttons */
+/* end of section 5 content */
+/* end of section 5 */ ;
