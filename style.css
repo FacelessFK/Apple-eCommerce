@@ -69,8 +69,8 @@ html {
     perspective: 100rem;
 }
 .cube {
-    width: 30rem;
-    height: 52rem;
+    width: 26rem;
+    height: 45rem;
     transform-style: preserve-3d;
     transform: rotateY(20deg) rotateX(0) rotateZ(0);
     position: relative;
